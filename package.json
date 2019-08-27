@@ -1,0 +1,25 @@
+{
+  "name": "cordova-plugin-android-wifi-lock",
+  "version": "1.0.0",
+  "description": "Cordova Android plugin to prevent WiFi radio being disabled",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boedy/cordova-plugin-android-wifi-lock.git"
+  },
+  "keywords": [
+    "cordova",
+    "android",
+    "WiFi",
+    "lock"
+  ],
+  "author": "Boudewijn Geiger",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/boedy/cordova-plugin-android-wifi-lock/issues"
+  },
+  "homepage": "https://github.com/boedy/cordova-plugin-android-wifi-lock#readme"
+}

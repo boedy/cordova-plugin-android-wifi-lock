@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-android-wifi-lock" version="1.0.0">
+    <name>WiFiLock</name>
+    <description>Cordova Plugin Android WiFi Lock</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,android,WiFi,lock</keywords>
+    <js-module src="www/wifiLock.js" name="WiFiLock">
+        <clobbers target="WiFiLock" />
+    </js-module>
+    <platform name="android">
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WAKE_LOCK" />
+        </config-file>
+        <config-file target="config.xml" parent="/*">
+            <feature name="WiFiLock">
+                <param name="android-package" value="org.apache.cordova.plugin.WiFiLock"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/WiFiLock.java" target-dir="src/org/apache/cordova/plugin" />
+    </platform>
+</plugin>
